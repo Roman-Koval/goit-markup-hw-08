@@ -1,0 +1,79 @@
+// @media  screen and (min-width:480px) {
+// @media  screen and (min-width: 768px) {
+// @media  screen and (min-width: 1200px) {
+
+
+// header {
+//     display: flex;
+//     // justify-content: space-between;
+//     align-items: center;
+// }
+
+.menu-button {
+    @media  screen and (min-width:480px) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: 0;
+    }
+    @media  screen and (min-width: 768px) {
+        display: none;
+    }
+    @media  screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.header-nav__list, .contacts-list {
+    @media  screen and (max-width:480px) {
+        display: none;
+    }
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--black-text);
+    font-size: 24px;
+}
+
+.logo-blue {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--blue-text);
+    font-size: 24px;
+}
+
+.logo-footer {
+    display: block;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: var(--white-text);
+    margin-bottom: 20px;
+  }
+
+
+
+
+// @media  screen and (min-width:480px)
+//     @media  screen and (min-width: 768px)
+//     @media  screen and (min-width: 1170px)

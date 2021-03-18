@@ -1,0 +1,64 @@
+/* HERO*/
+.hero__diacription {
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text);
+    margin-bottom: 30px;
+    @media  screen and (max-width:1199px) {
+        font-size: 26px; 
+    }
+    @media  screen and (min-width:1200px) {
+        font-size: 44px;
+    }
+  }
+  
+  .order {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--white-text);
+    /* text-align: center; */
+    background: var(--blue-text);
+    border-radius: 4px;
+    padding: 10px 32px;
+    /* justify-content: center; */
+    /* display: inline-block; */
+    /* align-items: center; */
+    border-width: 0;
+    -webkit-transition: var(--transition-250);
+    transition: var(--transition-250);
+  }
+  
+  .order:focus,
+  .order:hover {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-transition: var(--transition-250);
+    transition: var(--transition-250);
+    outline: none;
+    border: none;
+  }
+  
+  button:active, button:focus {
+    /* outline: none !important; */
+  }
+  
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hat.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  
