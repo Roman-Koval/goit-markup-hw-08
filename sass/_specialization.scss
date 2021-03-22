@@ -1,0 +1,53 @@
+.specialization {
+    @media (max-width:1199px) {
+        display: none;
+    }
+    padding-bottom: 94px;
+  }
+  
+  .specialization__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--graphite-text);
+    margin-bottom: 50px;
+  }
+  
+  .specialization__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .specialization__list li:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .specialization__thumb {
+    position: relative;
+  }
+  
+  .specialization__description {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 82px;
+  }
+  
+  .specialization__description h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text);
+  }

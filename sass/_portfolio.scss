@@ -1,0 +1,98 @@
+.portfolio {
+    padding: 94px 0;
+  }
+  
+  .portfolio__title {
+    display: none;
+  }
+  
+  .portfolio__list {
+    display: flex;
+    width: 100%;
+    @media (min-width: 1200px) {
+    
+    
+    }
+  }
+  
+  .portfolio__list {
+    
+    
+    margin-bottom: 50px;
+    @media (min-width: 1200px) {
+    justify-content: center;
+    display: flex;
+    }
+  }
+  
+  .portfolio__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  /* .button {
+      font-family: inherit;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #212121;
+      background: #F5F4FA;
+      border-radius: 4px;
+      padding: 6px 22px;   
+  } */
+  .portfolio__button:focus,
+  .portfolio__button:hover {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white-text);
+    background: var(--blue-text);
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    -webkit-transition: var(--transition-250);
+    transition: var(--transition-250);
+  }
+  
+  .portfolio__button:active {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white-text);
+    background: var(--blue-text);
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+  
+  .portfolio__button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--graphite-text);
+    background: var(--back-gray-light);
+    border-radius: 4px;
+    padding: 6px 22px;
+    outline: none;
+    border: none;
+    -webkit-transition: var(--transition-250);
+    transition: var(--transition-250);
+  }
+  
+  .portfolio__button,
+  .portfolio__button:active,
+  .portfolio__button:focus {
+    outline: none;
+    border: none;
+  }
+  
+  .portfolio__button:focus {
+    color: var(--white-text);
+  }
+  
+  .portfolio__button:focus {
+    background: var(--blue-text);
+  }

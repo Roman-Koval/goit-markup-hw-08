@@ -20,24 +20,24 @@
                 <li><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
                 <li><a class="header-nav__link" href="">Контакты</a></li>
             </ul>
-
-            </nav>
             <ul class="contacts-list">
-                <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
-                    <svg class="contacts-list__mail" width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>info@devstudio.com</a></li>
-                <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+38-096-111-11-11">
-                    <svg class="contacts-list__tel" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a></li>
-            </ul>
-            <button class="menu-button" type="button" data-menu-button>
-              <svg width="40px" height="40px" aria-label="Мобильное меню"> 
-                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button> 
+              <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts-list__mail" width="16" height="12">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>info@devstudio.com</a></li>
+              <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+38-096-111-11-11">
+                  <svg class="contacts-list__tel" width="10" height="16">
+                      <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>+38 096 111 11 11</a></li>
+          </ul>
+              <button class="menu-button js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu" type="button">
+                  <svg width="40px" height="40px" aria-label="Мобильное меню"> 
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                  </svg>
+                </button> 
+            </nav>
+            
         </div>
     </header>
     
@@ -139,7 +139,9 @@
                 
                     <li class="team__item">
                       <div class="team__thumb">
-                        <img src="./images/1.jpg" alt="Игорь Демьяненко">
+                        <img 
+                        srcset="./images/1.jpg 1x, ./images/1@2x.jpg 2x" loading="lazy"
+                        src="./images/1.jpg" alt="Игорь Демьяненко">
                       </div>
                       <div class="team__container">
                         <h3 class="team__name">Игорь Демьяненко</h3>
@@ -180,7 +182,9 @@
                 
                     <li class="team__item">
                       <div class="team__thumb">
-                        <img src="./images/2.jpg" alt="Ольга Репина">
+                        <img
+                        srcset="./images/2.jpg 1x, ./images/2@2x.jpg 2x" loading="lazy"
+                        src="./images/2.jpg" alt="Ольга Репина">
                       </div>
                       <div class="team__container">
                         <h3 class="team__name">Ольга Репина</h3>
@@ -220,7 +224,8 @@
                 
                     <li class="team__item">
                       <div class="team__thumb">
-                        <img src="./images/3.jpg" alt="Николай Тарасов">
+                        <img srcset="./images/3.jpg 1x, ./images/3@2x.jpg 2x" loading="lazy"
+                         src="./images/3.jpg" alt="Николай Тарасов">
                       </div>
                       <div class="team__container">  
                         <h3 class="team__name">Николай Тарасов</h3>
@@ -260,7 +265,8 @@
                 
                     <li class="team__item">
                       <div class="team__thumb">
-                        <img src="./images/4.jpg" alt="Михаил Ермаков">
+                        <img srcset="./images/4.jpg 1x, ./images/4@2x.jpg 2x" loading="lazy"
+                         src="./images/4.jpg" alt="Михаил Ермаков">
                       </div>
                       <div class="team__container">   
                         <h3 class="team__name">Михаил Ермаков</h3>
@@ -362,8 +368,8 @@
                 <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 <a class="footer-contacts" href="tel:+38-096-111-11-11">+38-096 111 11 11</a>
                 </address>
-            </div>
-            <div class="footer-socials">
+            </div><!--
+            --><div class="footer-socials">
                 <h3 class="footer-socials__title">присоединяйтесь</h3>
                 <ul class="socials">
                     <li class="socials__item">
@@ -418,6 +424,7 @@
             </div>
         </div>
     </footer>
+
 
     <div data-modal class="modal-sign is-hidden">
       <div class="modal">
@@ -485,6 +492,47 @@
         </form>
 
       </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg>
+          <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu">
+          <li><a href="" class="link">Студия</a></li>
+          <li><a href="" class="link">Портфолио</a></li>
+          <li><a href="" class="link">Контакты</a></li>
+        </ul>
+        <ul class="contacts-list">
+          <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
+              <svg class="contacts-list__mail" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+              </svg>info@devstudio.com</a></li>
+          <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+38-096-111-11-11">
+              <svg class="contacts-list__tel" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a></li>
+      </ul>
+
+      <ul class="social-menu__list">
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Instagram</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Twitter</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">Facebook</a>
+        </li>
+        <li class="social-menu__item">
+          <a class="social-menu__link" href="#">LinkedIn</a>
+        </li>
+        
+    </ul>
+
+      </div>
+
     </div>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>

@@ -8,6 +8,12 @@
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
+    // @media (min-width:1200px) {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+  
+    // }
   }
 
   .features__svg {
@@ -26,21 +32,25 @@
     @media (min-width: 768px) { 
     display: flex;
     flex-wrap: wrap;
-    
+    margin-right: calc(-1 * 30px);
+    }
+    @media  screen and (min-width: 1200px) {
+      flex-wrap: unset;
     }
   }
   
   .features__item {
       @media (min-width:768px) {  
-        flex-basis: calc(100%/2-30px);
+        flex-basis: calc(100% / 2 - 30px);
 
           &:not(:last-child){
           margin-right: 30px;
           }
       }
     
-    @media  screen and (max-width: 1199px) {
-        
+    @media  screen and (min-width: 1200px) {
+      justify-content: center;
+      align-items: center;
     
     }
   }

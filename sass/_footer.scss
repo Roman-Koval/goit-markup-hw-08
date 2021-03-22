@@ -1,106 +1,95 @@
 //     @media  screen and (min-width:480px)
-//     @media  screen and (min-width: 768px)
-//     @media  screen and (min-width: 1170px)
+//     @media (min-width: 768px)
+//     @media  screen and (min-width: 1200px)
 
 
-/*FOOTER*/
 footer {
-    @media  screen and (min-width:480px) {
-        padding: 60px 0;
-        background: var(--back-gray);
-    }
-    @media  screen and (min-width: 768px) {
-        display: flex;
-        background: var(--back-gray);
-    }
-    @media  screen and (min-width: 1170px) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        background: var(--back-gray);
-    }   
+  padding: 60px 0;
+  background: var(--back-gray);
+  @media (min-width: 768px) {
+  display: flex;
   }
-  
-  .footer-left {
-    @media  screen and (min-width:480px) {
-        width: 100%;
-    }
-    @media  screen and (min-width: 768px) {
-        width: 50%;
-        display: inline-block;
-    }
-    @media  screen and (min-width: 1170px) {
-        width: 25%;
-        display: inline-block;
-    }
-  }
-  
-  .logo-footer {
-    @media  screen and (min-width:480px) {
-        display: inline-block;
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 26px;
-        color: var(--white-text);
-        margin-bottom: 20px;
-        
-    }
+}
 
-  }
-  
-  .adress {
-    @media  screen and (min-width:480px) {
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: var(--white-text);
-    }
-    
-  }
-  
-  .footer-contacts {
-    @media  screen and (min-width:480px) {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: var(--grey-text-op60);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 8px;
-    text-align: center;
-    }
-  }
-  
-  .footer-socials {
-    @media  screen and (min-width:480px) {
-        width: 100%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    vertical-align: top;
+.footer-left {
+  @media (min-width: 768px) {
+    width: 50%;
     display: inline-block;
+  }
+  @media (min-width: 1200px) {
+  width: 25%;
+  display: inline-block;
+  }
+}
+
+.logo-footer {
+  display: block;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--white-text);
+  margin-bottom: 20px;
+  @media (max-width: 1199px) {
+  text-align:center;
+  }
+}
+
+.adress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--white-text);
+  @media (max-width: 1199px) {
+  text-align: center;
+  }
+}
+
+.footer-contacts {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--grey-text-op60);
+  display: flex;
+  padding-top: 8px;
+  @media (max-width: 1199px) {
+  justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    flex-direction: column;
+    padding-top: 9px;
+  }
+}
+
+.footer-socials {
+  vertical-align: top;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 768px) {
+    width: 50%;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  @media (min-width: 1200px) {
     padding-top: 12px;
   }
   
-  .footer-socials__title {
-    @media  screen and (min-width:480px) {
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-text);
-    margin-bottom: 20px;
-    text-align: center;
-    }
-  }
+}
+
+.footer-socials__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-bottom: 20px;
+  // @media (max-width: 1199px) {
+  text-align:center;
+  // }
+  
+}
