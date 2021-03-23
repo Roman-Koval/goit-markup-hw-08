@@ -30,7 +30,7 @@
                       <use href="./images/icons.svg#icon-smartphone"></use>
                   </svg>+38 096 111 11 11</a></li>
           </ul>
-              <button class="menu-button js-open-menu" aria-expanded="false"
+              <button class="menu-toggle js-open-menu" aria-expanded="false"
                 aria-controls="mobile-menu" type="button">
                   <svg width="40px" height="40px" aria-label="Мобильное меню"> 
                     <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
@@ -495,10 +495,11 @@
 
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg>
+          <svg width="40px" height="40px" aria-label="Мобильное меню">
           <use class="icon-close" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
         <ul class="mobile-menu">
           <li><a href="" class="link">Студия</a></li>
           <li><a href="" class="link">Портфолио</a></li>
@@ -534,7 +535,13 @@
       </div>
 
     </div>
-    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
