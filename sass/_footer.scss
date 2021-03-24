@@ -13,7 +13,7 @@ footer {
 
 .footer-left {
   @media (min-width: 768px) {
-    width: 50%;
+    // width: 50%;
     display: inline-block;
   }
   @media (min-width: 1200px) {
@@ -71,11 +71,13 @@ footer {
     display: inline-block;
     padding-top: 0;
     padding-bottom: 0;
+    margin-left: 165px;
+    
   }
   
   @media (min-width: 1200px) {
     
-    padding-top: 12px;
+    padding: 12px 93px 0px 70px;
   }
   
 }
@@ -93,5 +95,8 @@ footer {
   // @media (max-width: 1199px) {
   text-align:center;
   // }
+  @media (min-width: 768px) {
+    margin-top: 5px;
+  }
   
 }
