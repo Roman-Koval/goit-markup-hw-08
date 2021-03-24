@@ -35,6 +35,7 @@
     margin-right: calc(-1 * 30px);
     }
     @media  screen and (min-width: 1200px) {
+      max-width: 1170px;
       flex-wrap: unset;
     }
   }

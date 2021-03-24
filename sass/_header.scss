@@ -83,12 +83,20 @@
   }
 
   .header-nav {
+    @media  screen and (max-width: 767px) {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
     @media  screen and (min-width: 768px) {
   align-items: center;
     }
 }
 
 .header-nav__list {
+    @media  screen and (max-width: 767px) {
+    display: none;
+  }
     @media  screen and (min-width: 768px) {
     margin-left: 88px;
     }
@@ -221,11 +229,9 @@
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -286,7 +292,7 @@
   list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-menu__link {
   display: block;
   padding: 10px;
   font-family: Roboto;

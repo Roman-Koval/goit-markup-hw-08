@@ -13,23 +13,29 @@
     <header class="header">
         <div class="container">
             <nav class="header-nav">
-            <a class="logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-            <ul class="header-nav__list">
-                <li><a class="header-nav__link" href="./index.html">Студия</a></li>
-                <li class="header-nav__isActive"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="header-nav__link" href="">Контакты</a></li>
-            </ul>
-            </nav>
-            <ul class="contacts-list">
-                <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
-                    <svg class="contacts-list__mail" width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>info@devstudio.com</a></li>
-                <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+38-096-111-11-11">
-                    <svg class="contacts-list__tel" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a></li>
-            </ul> 
+                <a class="logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+                <ul class="header-nav__list">
+                    <li><a class="header-nav__link" href="./index.html">Студия</a></li>
+                    <li class="header-nav__isActive"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="header-nav__link" href="">Контакты</a></li>
+                </ul>
+                <ul class="contacts-list">
+                  <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
+                      <svg class="contacts-list__mail" width="16" height="12">
+                          <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>info@devstudio.com</a></li>
+                  <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+38-096-111-11-11">
+                      <svg class="contacts-list__tel" width="10" height="16">
+                          <use href="./images/icons.svg#icon-smartphone"></use>
+                      </svg>+38 096 111 11 11</a></li>
+              </ul>
+                  <button class="menu-toggle js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu" type="button">
+                      <svg width="40px" height="40px" aria-label="Мобильное меню"> 
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                      </svg>
+                    </button> 
+                </nav>
         </div>
     </header>
     <section>
@@ -47,7 +53,9 @@
             <ul class="working">
                  <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/technohryak.jpg" alt="Пример работы">
+                        <img class="working__picture"
+                        srcset="../images/technohryak.jpg 1x, ./images/technohryak@2x.jpg 2x" loading="lazy"
+                        src="./images/technohryak.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -62,7 +70,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/poster.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/poster.jpg 1x, ./images/poster@2x.jpg 2x" loading="lazy"
+                        src="./images/poster.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -77,7 +87,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/restoran.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/restoran.jpg 1x, ./images/restoran@2x.jpg 2x" loading="lazy"
+                        src="./images/restoran.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -92,7 +104,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/prime.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/prime.jpg 1x, ./images/prime@2x.jpg 2x" loading="lazy"
+                        src="./images/prime.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -107,7 +121,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/boxes.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x" loading="lazy"
+                        src="./images/boxes.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -122,7 +138,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/web.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/web.jpg 1x, ./images/web@2x.jpg 2x" loading="lazy"
+                        src="./images/web.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -137,7 +155,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/limited.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/limited.jpg 1x, ./images/limited@2x.jpg 2x" loading="lazy"
+                        src="./images/limited.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -152,7 +172,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/lab.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/lab.jpg 1x, ./images/lab@2x.jpg 2x" loading="lazy"
+                        src="./images/lab.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -167,7 +189,9 @@
                 </li>
                 <li class="working__card">
                     <div class="working__thumb">
-                        <img class="working__picture" src="./images/growing.jpg" alt="Пример работы">
+                        <img class="working__picture" 
+                        srcset="../images/growing.jpg 1x, ./images/growing@2x.jpg 2x" loading="lazy"
+                        src="./images/growing.jpg" alt="Пример работы">
                         <p class="working__text">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
@@ -250,5 +274,50 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40px" height="40px" aria-label="Мобильное меню">
+          <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li class="item__isActive"><a href="" class="mobile-menu__link">Студия</a></li>
+          <li><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+          <li><a href="" class="mobile-menu__link">Контакты</a></li>
+        </ul>
+        <ul class="mobile-menu__contacts-list">
+          <li class="mobile-menu__tel"><a class="mobile-menu__tel-link" href="tel:+38-096-111-11-11">
+            +38 096 111 11 11</a></li>
+          <li class="mobile-menu__mail"><a class="mobile-menu__mail-link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a></li>
+      </ul>
+  
+      <ul class="menu-social__list">
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="#">Instagram</a>
+        </li>
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="#">Twitter</a>
+        </li>
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="#">Facebook</a>
+        </li>
+        <li class="menu-social__item">
+          <a class="menu-social__link" href="#">LinkedIn</a>
+        </li>
+        
+    </ul>
+  
+      </div>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 </html>
