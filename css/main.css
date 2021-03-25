@@ -493,15 +493,15 @@ body {
 }
 
 .menu-social__item {
-  display: inline;
+  display: inline-block;
 }
 
-.menu-social__item:not(:last-child) {
-  margin-right: 10px;
+.menu-social__item::after {
+  padding-right: 10px;
 }
 
-.menu-social__item:not(:first-child) {
-  margin-left: 10px;
+.menu-social__item::after {
+  padding-left: 10px;
 }
 
 .menu-social__item::after {
