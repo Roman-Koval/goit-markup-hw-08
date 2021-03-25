@@ -47,30 +47,31 @@ footer {
   font-size: 14px;
   color: var(--grey-text-op60);
   display: flex;
-  padding-top: 8px;
+  margin-top: 8px;
   @media (max-width: 1199px) {
   justify-content: center;
   }
   @media (min-width: 1200px) {
     flex-direction: column;
-    padding-top: 9px;
+    margin-top: 9px;
   }
 }
 
 .footer-socials {
   vertical-align: top;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
   @media (min-width: 768px) {
     display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 165px;
   }
   
   @media (min-width: 1200px) {
     margin-left: 70px;
+    margin-top: 7px;
   }
   
 }
