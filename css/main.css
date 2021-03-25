@@ -358,7 +358,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .contacts-list li:last-child {
     margin-top: 10px;
   }
@@ -370,7 +370,7 @@ body {
   }
 }
 
-.contacts-list .contacts-list__link .contacts-list__mail, .contacts-list__tel {
+.contacts-list__mail, .contacts-list__tel {
   fill: currentColor;
   vertical-align: middle;
   margin-right: 10px;
