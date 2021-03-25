@@ -21,24 +21,17 @@
     font-weight: bold;
     font-size: 16px;
     color: var(--white-text);
-    /* text-align: center; */
     background: var(--blue-text);
     border-radius: 4px;
     padding: 10px 32px;
-    /* justify-content: center; */
-    /* display: inline-block; */
-    /* align-items: center; */
     border-width: 0;
-    -webkit-transition: var(--transition-250);
     transition: var(--transition-250);
   }
   
   .order:focus,
   .order:hover {
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    -webkit-transition: var(--transition-250);
     transition: var(--transition-250);
     outline: none;
     border: none;

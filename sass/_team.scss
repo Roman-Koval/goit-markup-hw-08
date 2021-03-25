@@ -22,16 +22,6 @@
     }
   }
 
-  // .team__thumb {
-  //   height: 460px;
-  //   @media (min-width:768px) {
-  //     height: 374px;
-  //   }
-  //   @media (min-width:768px) {
-  //     height: 260px;
-  //   }
-  // }
-  
   .team__list {
     margin-bottom: calc(-1 * 30px);
 
@@ -56,13 +46,10 @@
     
     @media (min-width:768px) {
         flex-basis: calc(100% / 2 - 30px);
-        margin-left: 30px;
-        
+        margin-left: 30px;  
     }
   }
-  
-  
-  
+
   .team__container {
     padding: 30px 32px;
   }
