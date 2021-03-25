@@ -1247,13 +1247,13 @@ footer {
   }
 }
 
-main {
+.portfolio {
   padding: 60px 0;
   border-top: 1px solid #ECECEC;
 }
 
 @media (min-width: 1200px) {
-  main {
+  .portfolio {
     padding: 94px 0;
   }
 }
