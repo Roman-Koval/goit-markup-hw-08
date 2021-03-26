@@ -29,6 +29,10 @@
   
   .portfolio__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 15px;
+    @media (min-width: 768px) {
+      margin-bottom: 0px;
+      }
+      
 }
 
   .portfolio__item:not(:last-child) {
